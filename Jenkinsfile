@@ -9,7 +9,6 @@ pipeline{
                 sh 'sudo chmod +x yomi.sh'
                 sh 'bash -x yomi.sh'
             }   
-           
         }
         stage('2-second name'){
             steps{
