@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh './gradlew check'
+                echo " I am etech engineur"
             }
         }
     }
