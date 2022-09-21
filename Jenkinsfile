@@ -1,16 +1,16 @@
 pipeline{
     agent any
-	options {
+	//options {
         // This is required if you want to clean before build
-        skipDefaultCheckout(true)
-    }
+        //skipDefaultCheckout(true)
+   // }
     stages{
         stage('1-my name'){
             steps{
-		    cleanWs()
+		    //cleanWs()
                 // We need to explicitly checkout from SCM here
-                checkout scm
-                echo "Building ${env.JOB_NAME}..."
+                //checkout scm
+                //echo "Building ${env.JOB_NAME}..."
                 echo "My name is Abayomi"
                 sh 'ps -ef'
             }   
