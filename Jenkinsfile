@@ -21,6 +21,12 @@ pipeline{
                 sh 'ps -ef'
             }
         }
+	stage('3-third name'){
+            steps{
+                echo "My name is abbey"
+                sh 'ps -ef'
+            }
+        }
     }
 }
 
