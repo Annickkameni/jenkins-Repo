@@ -15,7 +15,12 @@ pipeline{
                 sh 'ps -ef'
             }   
         }
-       
+       stage('2-second name'){
+            steps{
+                echo "My name is Claudi-ann"
+                sh 'ps -ef'
+            }
+        }
     }
 }
 
